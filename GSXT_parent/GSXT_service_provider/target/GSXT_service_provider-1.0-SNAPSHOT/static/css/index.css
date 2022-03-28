@@ -1,0 +1,190 @@
+.trail{
+    width: 100%;
+    height: 100%;
+}
+.scroll-to-top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 82px;
+    height: 82px;
+    background-color: rgba(209, 125, 56, 0.9);
+}
+a{
+    text-decoration: none;
+}
+.navigation{
+    width: 1200px;
+    margin: auto;
+}
+body{
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+.kong{
+    width: 100%;
+    height: 70px;
+}
+header{
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.home{
+    width: 100%;
+    height: 100%;
+}
+
+.first-screen{
+    width: 1196px;
+    height: 50px;
+    margin: 88px auto 14px;
+    background-color: #fff;
+}
+.second-screen{
+    margin: 14px auto;
+    width: 1196px;
+    overflow: hidden;
+}
+.first-screen-left{
+    width: 726px;
+    float: left;
+    background-color: #fff;
+}
+.you{
+    margin-left: 20px;
+}
+.btn-more{
+    width: 100%;
+    height: 38px;
+}
+.first-screen-right{
+    width: 452px;
+    float: right;
+    background-color: #fff;
+}
+.left-one{
+    height: 32px;
+    margin-top: 10px;
+    
+    border-bottom: 2px solid #f0f2f7;
+}
+.left-three-text{
+    height: 180px;
+    border-bottom: 2px solid #f0f2f7;
+}
+.right-file{
+    height: 60px;
+    overflow: hidden;
+    border-bottom: 2px solid #f0f2f7;
+}
+.right-file-two{
+    height: 70px;
+    overflow: hidden;
+    border-bottom: 2px solid #f0f2f7;
+}
+.right-header{
+    height: 52px;
+    border-bottom: 2px solid #f0f2f7;
+}
+.img-daoxiao{
+    height: 100%;
+    width: 100%;
+}
+.zuo-img{
+    height: 100%;
+    width: 220px;
+    float: left;
+}
+.img-weixin{
+    margin-top: 34px;
+    margin-left: 34px;
+    width: 320px;
+    height: 320px;
+}
+.zuo-img-zhong{
+    margin-top: 20px;
+    margin-left: 15px;
+    height: 142px;
+    width: 200px;
+    background-color: rgb(7, 7, 7);
+}
+.ul-header li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.left-three-text-up{
+    overflow: hidden;
+    width: 500px;
+    height: 50px;
+}
+.left-three-text-centre{
+    overflow: hidden;
+    width: 500px;
+    height: 80px;
+}
+.left-three-text-below{
+    overflow: hidden;
+    width: 500px;
+    height: 50px;
+}
+.left-three-text-a{
+    display: block;
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.left-three-text-centre-a{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.left-three-text-below-one{
+    overflow: hidden;
+    float: left;
+    height: 100%;
+    width: 50px;
+}
+.left-three-text-below-two{
+    float: left;
+    height: 100%;
+    width: 45px;
+}
+.left-three-text-below-three li{
+    display: block;
+    float: right;
+    height: 100%;
+    width: 50px;
+    margin-top: 10px;
+}
+.left-three-text-below-img{
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.left-three-text-below-two-xiao{
+    margin-top: 12px;
+    height: 100%;
+    width: 318px;
+    float: left;
+}
+.left-three-text-below-two-time{
+    margin-top: 11px;
+    height: 100%;
+    width: 208px;
+    float: left;
+}
+.right-file-a{
+    display: block;
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-top: 17px;
+}
+

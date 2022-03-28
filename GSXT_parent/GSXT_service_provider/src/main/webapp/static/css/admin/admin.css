@@ -1,0 +1,12 @@
+.user-manage{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 1000px;
+    margin: auto;
+    margin-top: 70px;
+}
+.user-manage-within{
+    height: 100%;
+    width: 900px;
+    margin: auto;
+}

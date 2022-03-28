@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工商学堂</title>
+    <link rel="stylesheet" href="../../static/layui-master/dist/css/layui.css" media="all">
+    <script src="../../static/js/JQuery-3.js"></script>
+    <script src="../../static/layui-master/dist/layui.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../../static/css/index.css">
+    <link rel="stylesheet" href="../../static/css/search.css">
+</head>
+<body>
+    <header>
+        <div class="layui-nav">
+            <ul>
+                <li class="layui-nav-item">
+                    <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">个人中心</a></dd>
+                        <dd><a href="javascript:;">管理员页面</a></dd>
+                        <dd><a href="javascript:;">设置</a></dd>
+                        <dd><a href="javascript:;">退出</a></dd>
+                    </dl>
+                    </li>
+                <li class="layui-nav-item">
+                    <a href="">工商学堂</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">动态<span class="layui-badge-dot"></span></a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">消息<span class="layui-badge">9</span></span></a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">关注</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">个人中心</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">写文章</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">搜索</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="kong1" id="ding"></div>
+ 
+    <div class="home">
+        <div class="trail">
+            <div class="second-screen1" style="background-color: rgb(255, 255, 255);">
+                <div class="centre-second-screen">
+                    <input style="float: left; width: 632px;" type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入搜索内容" class="layui-input">
+                    <button style="float: left;" type="button" class="layui-btn layui-btn-normal">搜索</button>
+                </div>
+                <hr>
+                <div class="right-header">
+                    <p class="layui-elem-quote" class="p-zuo">热门推荐</p>
+                </div>
+                <div style="height: 100%; width: 726px; margin-left: 90px;">
+                    <div th:each="news,newsStat:${newsList}" class="left-three-text">
+                        <div class="zuo-img">
+                            <div class="zuo-img-zhong"><a href="../../WEB-INF/views/article.html" style="height: 100%; width: 100%; display:block"><img class="img-daoxiao" src="../../static/img/1648123602812.png"></a></div>
+                        </div>
+                        <div class="left-three-text-up">
+                            <a class="left-three-text-a" th:text="${news.title}" href="../../WEB-INF/views/article.html">风纪扣撒辣椒粉卡卷</a>
+                        </div>
+                        <div class="left-three-text-centre">
+                            <a class="left-three-text-centre-a" th:text="${news.content}" href="../../WEB-INF/views/article.html">
+                            发神经康复疗法就爱看领导JFK垃圾覅六级考了了解对方卡卡了解；来解释大方开朗
+                            </a>
+                        </div>
+                        <div class="left-three-text-below">
+                            <div class="left-three-text-below-one">
+                            </div>
+                            <div class="left-three-text-below-two">
+                                <div class="left-three-text-below-two-time">
+                                    发布于 <span th:text="${news.time}">1990-12-06</span>
+                                </div>
+                            </div>
+                            <ul class="left-three-text-below-three" class="layui-btn-container">
+                                <li>
+                                    <button type="button" class="layui-btn"><i class="layui-icon"></i></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="layui-btn"><i class="layui-icon">❤</i></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="layui-btn"><i class="layui-icon">...</i></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div th:each="news,newsStat:${newsList}" class="left-three-text">
+                    <div class="zuo-img">
+                        <div class="zuo-img-zhong"><a href="../../WEB-INF/views/article.html" style="height: 100%; width: 100%; display:block"><img class="img-daoxiao" src="../../static/img/1648123602821.jpg"></a></div>
+                    </div>
+                    <div class="left-three-text-up">
+                        <a class="left-three-text-a" th:text="${news.title}" href="../../WEB-INF/views/article.html">风纪扣撒辣椒粉卡卷</a>
+                    </div>
+                    <div class="left-three-text-centre">
+                        <a class="left-three-text-centre-a" th:text="${news.content}" href="../../WEB-INF/views/article.html">
+                        发神经康复疗法就爱看领导JFK垃圾覅六级考了了解对方卡卡了解；来解释大方开朗
+                        </a>
+                    </div>
+                    <div class="left-three-text-below">
+                        <div class="left-three-text-below-one">
+                        </div>
+                        <div class="left-three-text-below-two">
+                            <div class="left-three-text-below-two-time">
+                                发布于 <span th:text="${news.time}">1990-12-06</span>
+                            </div>
+                        </div>
+                        <ul class="left-three-text-below-three" class="layui-btn-container">
+                            <li>
+                                <button type="button" class="layui-btn"><i class="layui-icon"></i></button>
+                            </li>
+                            <li>
+                                <button type="button" class="layui-btn"><i class="layui-icon">❤</i></button>
+                            </li>
+                            <li>
+                                <button type="button" class="layui-btn"><i class="layui-icon">...</i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 100%; margin: 0;">
+                    <button type="button" class="layui-btn layui-btn-fluid">加载更多</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-to-top">
+        <a type="button" style="height: 100%; width: 100%; display:block" class="layui-btn layui-btn-lg layui-btn-normal" href="#ding">顶部</a>
+    </div>
+
+</body>
+</html>

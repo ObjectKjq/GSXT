@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工商学堂</title>
+    <link rel="stylesheet" href="../../static/layui-master/dist/css/layui.css" media="all">
+    <!-- <script tppabs="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script> -->
+    <script src="../../static/js/JQuery-3.js"></script>
+    <script src="../../static/layui-master/dist/layui.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../../static/css/index.css"></script>
+</head>
+<body>
+    <header>
+        <div class="layui-nav">
+            <ul>
+                <li class="layui-nav-item">
+                    <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">个人中心</a></dd>
+                        <dd><a href="javascript:;">管理员页面</a></dd>
+                        <dd><a id="setting" href="javascript:;">设置</a></dd>
+                        <dd><a href="javascript:;">退出</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">工商学堂</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">动态<span class="layui-badge-dot"></span></a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">消息<span class="layui-badge">9</span></span></a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">关注</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">个人中心</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">写文章</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="../../WEB-INF/views/search.html">搜索</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="kong" id="ding"></div>
+    <div class="navigation">
+        <ul class="layui-nav layui-bg-cyan">
+            <li class="layui-nav-item"><a href="">计算机科学与技术</a></li>
+            <li class="layui-nav-item"><a href="">软件工程</a></li>
+            <li class="layui-nav-item"><a href="">大数据</a></li>
+            <li class="layui-nav-item"><a href="">土木工程</a></li>
+            <li class="layui-nav-item"><a href="">包装工程</a></li>
+            <li class="layui-nav-item"><a href="">新能源</a></li>
+            <li class="layui-nav-item"><a href="">材料设计</a></li>
+            <li class="layui-nav-item"><a href="">机器工程</a></li>
+            <li class="layui-nav-item">
+            <a href="javascript:;">更多</a>
+            <dl class="layui-nav-child">
+                <dd><a href="">测试1</a></dd>
+                <dd><a href="">测试2</a></dd>
+                <dd><a href="">测试3</a></dd>
+            </dl>
+            </li>
+        </ul>
+    </div>
+    <div class="home">
+        <div class="trail">
+            <div class="second-screen">
+                <div class="first-screen-left">
+                    <div class="left-one">
+                        <div class="you">
+                            <span class="layui-breadcrumb" lay-separator="|" class="you">
+                                <a href="">最新</a>
+                                <a href="">最热</a>
+                                <a href="">最多收藏</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div th:each="news,newsStat:${newsList}" class="left-three-text">
+                        <div class="zuo-img">
+                            <div class="zuo-img-zhong"><a href="../../WEB-INF/views/article.html" style="height: 100%; width: 100%; display:block"><img class="img-daoxiao" src="../../static/img/1648123602812.png"></a></div>
+                        </div>
+                        <div class="left-three-text-up">
+                            <a class="left-three-text-a" th:text="${news.title}" href="../../WEB-INF/views/article.html">风纪扣撒辣椒粉卡卷</a>
+                        </div>
+                        <div class="left-three-text-centre">
+                            <a class="left-three-text-centre-a" th:text="${news.content}" href="../../WEB-INF/views/article.html">
+                            发神经康复疗法就爱看领导JFK垃圾覅六级考了了解对方卡卡了解；来解释大方开朗
+                            </a>
+                        </div>
+                        <div class="left-three-text-below">
+                            <div class="left-three-text-below-one">
+                            </div>
+                            <div class="left-three-text-below-two">
+                                <div class="left-three-text-below-two-time">
+                                    发布于 <span th:text="${news.time}">1990-12-06</span>
+                                </div>
+                            </div>
+                            <ul class="left-three-text-below-three" class="layui-btn-container">
+                                <li>
+                                    <button type="button" class="layui-btn"><i class="layui-icon layui-icon-rate"></i></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="layui-btn"><i class="layui-icon layui-icon-heart"></i></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="layui-btn"><i class="layui-icon layui-icon-more"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div th:each="news,newsStat:${newsList}" class="left-three-text">
+                        <div class="zuo-img">
+                            <div class="zuo-img-zhong"><a href="../../WEB-INF/views/article.html" style="height: 100%; width: 100%; display:block"><img class="img-daoxiao" src="../../static/img/1648123602821.jpg"></a></div>
+                        </div>
+                        <div class="left-three-text-up">
+                            <a class="left-three-text-a" th:text="${news.title}" href="../../WEB-INF/views/article.html">风纪扣撒辣椒粉卡卷</a>
+                        </div>
+                        <div class="left-three-text-centre">
+                            <a class="left-three-text-centre-a" th:text="${news.content}" href="../../WEB-INF/views/article.html">
+                            发神经康复疗法就爱看领导JFK垃圾覅六级考了了解对方卡卡了解；来解释大方开朗
+                            </a>
+                        </div>
+                        <div class="left-three-text-below">
+                            <div class="left-three-text-below-one">
+                            </div>
+                            <div class="left-three-text-below-two">
+                                <div class="left-three-text-below-two-time">
+                                    发布于 <span th:text="${news.time}">1990-12-06</span>
+                                </div>
+                            </div>
+                            <ul class="left-three-text-below-three" class="layui-btn-container">
+                                <li>
+                                    <button type="button" class="layui-btn"><i class="layui-icon layui-icon-rate"></i></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="layui-btn"><i class="layui-icon layui-icon-heart"></i></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="layui-btn"><i class="layui-icon layui-icon-more"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-more">
+                        <div style="width: 100%; margin: 0;">
+                            <button type="button" class="layui-btn layui-btn-fluid">加载更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-screen-right">
+                    <div class="right-header">
+                        <p class="layui-elem-quote" class="p-zuo">我校新闻</p>
+                    </div>
+                    <div class="right-file">
+                        <a class="right-file-a" href="../../WEB-INF/views/article.html">
+                            工商那些年的趣事
+                        </a>
+                    </div>
+                    <div class="right-file">
+                        <a class="right-file-a" href="../../WEB-INF/views/article.html">
+                            我校副校长的日常工作
+                        </a>
+                    </div>
+                    <div class="right-header">
+                        <p class="layui-elem-quote" class="p-zuo">免责声明</p>
+                    </div>
+                    
+                    <div class="right-file-two">
+                        <a class="right-file-a">
+                            本站所有资源均来源于网络，仅供学习参考，如有侵权，非常抱歉，请立即联系作者删除
+                        </a>
+                    </div>
+                    <div class="right-header-" class="layui-btn-container">
+                        <button id="author" data-method="offset" type="button" class="layui-btn layui-btn-fluid" data-type="auto" >联系作者</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 用户设置弹窗 -->
+    <div id="user-setting" style="display: none">
+        <div style="width: 400px; height: 450px; margin-top: 30px; margin-left: 50px;">
+            <form action="">
+                <span style="margin-left: 10px;">修改用户名: </span><br>
+                <input type="text" name="title" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input"><br>
+                <span style="margin-left: 10px;">修改密码: </span><br>
+                <input type="password" name="password" required lay-verify="required" placeholder="请输入旧密码" autocomplete="off" class="layui-input"><br>
+                <input type="password" name="password" required lay-verify="required" placeholder="请输入新密码" autocomplete="off" class="layui-input"><br>
+                <input type="password" name="password" required lay-verify="required" placeholder="确认新密码" autocomplete="off" class="layui-input"><br>
+                <span style="margin-left: 10px;">修改头像: </span><input type="file"><br><br>
+                <div style="margin-left: 10px; width: 100%;">修改手机号: </div><br>
+                
+                <label class="layui-form-label"><button type="button" class="layui-btn layui-btn-normal">发送验证码</button></label>
+                
+                <input style="width: 200px; margin-top: 10px; " type="text" name="" autocomplete="off" class="layui-input"><br>
+                <input type="text" name="title" required  lay-verify="required" placeholder="请输入新的手机号" autocomplete="off" class="layui-input"><br>
+                <input type="button" style="margin-left: 160px;" class="layui-btn layui-btn-normal" value="提交表单">
+            </form>
+        </div>
+    </div>
+    <!-- 作者微信弹窗 -->
+    <div id="admin-user" style="display: none">
+        <img class="img-weixin" src="../../static/img/微信.webp">
+    </div>
+    <script type="text/javascript">
+        $(function (){
+            function adminUser() {
+                layui.use(['layer'], function (){
+                    var layer = layui.layer, $ = layui.$;
+                    layer.open({
+                        type: 1,//类型
+                        anim: 3,//弹出方式
+                        maximum: true,//显示最大最小化按钮
+                        shadeClose: true,//点击外部不关闭
+                        shade: 0.3,//阴影
+                        area: ['400px', '450px'],//定义宽和高
+                        title: '作者微信',//题目
+                        content: $('#admin-user')//打开的内容
+                    });
+                });
+            }
+            function adminSetting() {
+                layui.use(['layer'], function (){
+                    var layer = layui.layer, $ = layui.$;
+                    layer.open({
+                        type: 1,//类型
+                        anim: 3,//弹出方式
+                        maximum: true,//显示最大最小化按钮
+                        shadeClose: true,//点击外部不关闭
+                        shade: 0.3,//阴影
+                        area: ['500px', '650px'],//定义宽和高
+                        title: '设置',//题目
+                        content: $('#user-setting')//打开的内容
+                    });
+                });
+            }
+            $("#author").click(function (){
+                adminUser();
+            })
+            $("#setting").click(function (){
+                adminSetting();
+            })
+        });
+    </script>
+    <!-- 回到顶部按钮 -->
+    <div class="scroll-to-top">
+        <a type="button" style="height: 100%; width: 100%; display:block" class="layui-btn layui-btn-lg layui-btn-normal" href="#ding">  <i >顶部</i> </a>
+    </div>
+</body>
+</html>

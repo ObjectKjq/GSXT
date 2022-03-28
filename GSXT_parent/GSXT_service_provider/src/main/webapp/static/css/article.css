@@ -1,0 +1,52 @@
+.kong1{
+    width: 100%;
+    height: 58px;
+}
+.article-within{
+    margin-top: 23px;
+    margin-left: 23px;
+    width: 680px;
+    height: 100%;
+}
+.right-article{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 412px;
+    height: 100%;
+}
+.user-ditails{
+    float: left;
+    width: 150px;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.three-button{
+    float: right;
+}
+.time-two{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.comment-below{
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(245, 245, 245);
+    width: 660px;
+}
+.comment-below-within{
+    overflow: hidden;
+    width: 620px;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.navigation-tags{
+   margin-top: 10px;
+   margin-left: 10px; 
+   width: 100%;
+   height: 100%;
+}

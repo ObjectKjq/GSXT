@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>工商学堂</title>
+    <script src="../../../static/js/jquery/jquery.min.js"></script>
+    <script src="../../../static/js/js/adminlte.js"></script>
+    <link rel="stylesheet" href="../../../static/css/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../../static/css/css/adminlte.min.css">
+    <link rel="stylesheet" href="../../../static/layui-master/dist/css/layui.css" media="all">
+    <script src="../../../static/js/JQuery-3.js"></script>
+    <script src="../../../static/layui-master/dist/layui.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../../../static/css/index.css">
+    <link rel="stylesheet" href="../../../static/css/admin/admin.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<header>
+    <div class="layui-nav" style="z-index: 0;">
+        <ul>
+            <li class="layui-nav-item">
+                <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">个人中心</a></dd>
+                    <dd><a href="javascript:;">管理员页面</a></dd>
+                    <dd><a id="setting" href="javascript:;">设置</a></dd>
+                    <dd><a href="javascript:;">退出</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="../../../WEB-INF/views/index.html">工商学堂</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">动态<span class="layui-badge-dot"></span></a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">消息<span class="layui-badge">9</span></span></a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">关注</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">个人中心</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">写文章</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="../../WEB-INF/views/search.html">搜索</a>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper" style="margin-top: 80px; z-index: -1;">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active">
+                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <p>
+                                管理员用户
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>用户管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>角色管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>权限管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>文章管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>评论管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>文章分类管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>消息管理</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                动态
+                            </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-chart-pie"></i>
+                            <p>
+                                个人中心
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="pages/charts/chartjs.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>关注管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/charts/flot.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>收藏管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/charts/inline.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>写文章</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/charts/uplot.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>消息</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+    </div>
+</header>
+<div class="user-manage">
+    <div class="user-manage-within">
+        <div class="user-manage-blank" style="height: 30px;"></div>
+        <hr>
+        <table class="layui-hide" id="demo"></table>
+        <script>
+            layui.use('table', function(){
+              var table = layui.table;
+              
+              //展示已知数据
+              table.render({
+                elem: '#demo'
+                ,page: true//开启分页
+                ,limit: 4//每页显示的数据数
+                ,loading: true
+                
+                ,cols: [[ //标题栏
+                  {field: 'id', title: 'ID', width: 80, sort: true}
+                  ,{field: 'username', title: '用户名', width: 120}
+                  ,{field: 'email', title: '图片地址', minWidth: 150}
+                  ,{field: 'sign', title: '手机号码', minWidth: 160}
+                  ,{field: 'sex', title: '账号状态', width: 100}
+                  ,{fixed: 'right', width:150, align:'center', toolbar: '#barDemo', title:'操作'}
+                ]]
+                ,data: [{
+                  "id": "10001"
+                  ,"username": "杜甫"
+                  ,"email": "https://www.layui.site/demo/table/test@email.com"
+                  ,"sex": "男"
+                  ,"city": "浙江杭州"
+                  ,"sign": "17537186280"
+                  ,"experience": "116"
+                  ,"ip": "192.168.0.8"
+                  ,"logins": "108"
+                  ,"joinTime": "2016-10-14"
+                }, {
+                  "id": "10002"
+                  ,"username": "李白"
+                  ,"email": "https://www.layui.site/demo/table/test@email.com"
+                  ,"sex": "男"
+                  ,"city": "浙江杭州"
+                  ,"sign": "人生恰似一场修行"
+                  ,"experience": "12"
+                  ,"ip": "192.168.0.8"
+                  ,"logins": "106"
+                  ,"joinTime": "2016-10-14"
+                  ,"LAY_CHECKED": true
+                }, {
+                  "id": "10003"
+                  ,"username": "王勃"
+                  ,"email": "https://www.layui.site/demo/table/test@email.com"
+                  ,"sex": "男"
+                  ,"city": "浙江杭州"
+                  ,"sign": "人生恰似一场修行"
+                  ,"experience": "65"
+                  ,"ip": "192.168.0.8"
+                  ,"logins": "106"
+                  ,"joinTime": "2016-10-14"
+                }, {
+                  "id": "10004"
+                  ,"username": "贤心"
+                  ,"email": "https://www.layui.site/demo/table/test@email.com"
+                  ,"sex": "男"
+                  ,"city": "浙江杭州"
+                  ,"sign": "人生恰似一场修行"
+                  ,"experience": "666"
+                  ,"ip": "192.168.0.8"
+                  ,"logins": "106"
+                  ,"joinTime": "2016-10-14"
+                }, {
+                  "id": "10005"
+                  ,"username": "贤心"
+                  ,"email": "https://www.layui.site/demo/table/test@email.com"
+                  ,"sex": "男"
+                  ,"city": "浙江杭州"
+                  ,"sign": "人生恰似一场修行"
+                  ,"experience": "86"
+                  ,"ip": "192.168.0.8"
+                  ,"logins": "106"
+                  ,"joinTime": "2016-10-14"
+                }, {
+                  "id": "10006"
+                  ,"username": "贤心"
+                  ,"email": "https://www.layui.site/demo/table/test@email.com"
+                  ,"sex": "男"
+                  ,"city": "浙江杭州"
+                  ,"sign": "人生恰似一场修行"
+                  ,"experience": "12"
+                  ,"ip": "192.168.0.8"
+                  ,"logins": "106"
+                  ,"joinTime": "2016-10-14"
+                }, {
+                  "id": "10007"
+                  ,"username": "贤心"
+                  ,"email": "https://www.layui.site/demo/table/test@email.com"
+                  ,"sex": "男"
+                  ,"city": "浙江杭州"
+                  ,"sign": "人生恰似一场修行"
+                  ,"experience": "16"
+                  ,"ip": "192.168.0.8"
+                  ,"logins": "106"
+                  ,"joinTime": "2016-10-14"
+                }, {
+                  "id": "10008"
+                  ,"username": "贤心"
+                  ,"email": "https://www.layui.site/demo/table/test@email.com"
+                  ,"sex": "男"
+                  ,"city": "浙江杭州"
+                  ,"sign": "人生恰似一场修行"
+                  ,"experience": "106"
+                  ,"ip": "192.168.0.8"
+                  ,"logins": "106"
+                  ,"joinTime": "2016-10-14"
+                }]
+                //,skin: 'line' //表格风格
+                ,even: true
+                //,page: true //是否显示分页
+                //,limits: [5, 7, 10]
+                //,limit: 5 //每页默认显示的数量
+              });
+            });
+        </script>
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        </script>
+    </div>
+</div>
+</body>
+</html>

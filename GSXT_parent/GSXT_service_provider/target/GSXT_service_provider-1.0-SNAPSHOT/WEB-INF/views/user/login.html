@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>工商学堂</title>
+    <link rel="stylesheet" type="text/css" href="../../../static/css/login.css"/>
+</head>
+<body>
+<div class="outer">
+    <div class="outer-one">
+        <h1>登录</h1>
+    </div>
+    <div class="within">
+        <form th:action="@{/admin/login}" method="post">
+            手机号码: <input name="phone" class="within-input1" type="text"><br/>
+            密   码: <input name="password" class="within-input1" type="password"><br/>
+            图形验证码: <br><input class="within-input3" type="password"><br/><br/>
+            <input id="btn-login" class="within-input2" type="submit" value="登录">
+        </form>
+    </div>
+</div>
+<span th:text="${exception.message}"></span>
+</body>
+</html>
