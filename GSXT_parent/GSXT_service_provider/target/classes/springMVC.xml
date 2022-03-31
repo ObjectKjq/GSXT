@@ -14,7 +14,7 @@
     <!--扫描springSecurity配置类，把他扫描到ioc容器中才有效，2-->
     <!--<context:component-scan base-package="com.gslxt.controller.security"/>-->
 
-    <!--开器springMVC的注解驱动-->
+    <!--开器springMVC的注解驱动,ajax处理，数据类型的转换-->
     <mvc:annotation-driven/>
 
     <!--配置视图解析器-->
@@ -41,4 +41,7 @@
 
     <!--将springMVC不能处理的请求交给tomcat-->
     <mvc:default-servlet-handler/>
+
+    <!--配置文件上传核心组件-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
 </beans>

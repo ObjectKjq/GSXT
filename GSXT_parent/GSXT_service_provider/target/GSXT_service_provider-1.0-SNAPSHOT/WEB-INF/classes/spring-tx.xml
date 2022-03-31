@@ -28,15 +28,21 @@
             <!--rollback-for属性：配置事务方法针对什么样的异常回滚
                 默认：运行异常回滚
                 建议：编译时异常和运行时异常都回滚-->
+
+            <!--增加开头的方法-->
             <tx:method name="save*" propagation="REQUIRES_NEW" rollback-for="java.lang.Exception"/>
+            <!--修改开头的方法-->
             <tx:method name="update*" propagation="REQUIRES_NEW" rollback-for="java.lang.Exception"/>
+            <!--删除开头的方法-->
             <tx:method name="remove*" propagation="REQUIRES_NEW" rollback-for="java.lang.Exception"/>
+            <!--批处理有关的方法-->
             <tx:method name="batch*" propagation="REQUIRES_NEW" rollback-for="java.lang.Exception"/>
             <!-- 以get..开始的所有等查询方法是查询操作：配置只读属性，让数据库知道这是一个查询操作，能够进行一定的优化 -->
             <tx:method name="get*" read-only="true"/>
             <tx:method name="find*" read-only="true"/>
             <tx:method name="query*" read-only="true"/>
             <tx:method name="count*" read-only="true"/>
+            <tx:method name="*" propagation="SUPPORTS"/>
         </tx:attributes>
     </tx:advice>
     <!--事务管理器控制-->

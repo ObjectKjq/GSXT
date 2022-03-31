@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>工商学堂</title>
     <link rel="stylesheet" href="../../static/layui-master/dist/css/layui.css" media="all">
-    <!-- <script tppabs="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script> -->
     <script src="../../static/js/JQuery-3.js"></script>
     <script src="../../static/layui-master/dist/layui.js" charset="utf-8"></script>
     <link rel="stylesheet" href="../../static/css/index.css"></script>
@@ -75,23 +74,23 @@
                 <div class="first-screen-left">
                     <div class="left-one">
                         <div class="you">
-                            <span class="layui-breadcrumb" lay-separator="|" class="you">
+                            <span class="layui-breadcrumb you" lay-separator="|">
                                 <a href="">最新</a>
                                 <a href="">最热</a>
                                 <a href="">最多收藏</a>
                             </span>
                         </div>
                     </div>
-                    <div th:each="news,newsStat:${newsList}" class="left-three-text">
+                    <div class="left-three-text">
                         <div class="zuo-img">
-                            <div class="zuo-img-zhong"><a href="../../WEB-INF/views/article.html" style="height: 100%; width: 100%; display:block"><img class="img-daoxiao" src="../../static/img/1648123602812.png"></a></div>
+                            <div class="zuo-img-zhong"><a href="../../WEB-INF/views/article.html" style="height: 100%; width: 100%; display:block"><img class="img-daoxiao" src="../../static/img/1648123602812.png"/></a></div>
                         </div>
                         <div class="left-three-text-up">
-                            <a class="left-three-text-a" th:text="${news.title}" href="../../WEB-INF/views/article.html">风纪扣撒辣椒粉卡卷</a>
+                            <a class="left-three-text-a" href="../../WEB-INF/views/article.html">风纪扣撒辣椒粉卡卷</a>
                         </div>
                         <div class="left-three-text-centre">
-                            <a class="left-three-text-centre-a" th:text="${news.content}" href="../../WEB-INF/views/article.html">
-                            发神经康复疗法就爱看领导JFK垃圾覅六级考了了解对方卡卡了解；来解释大方开朗
+                            <a class="left-three-text-centre-a" href="../../WEB-INF/views/article.html">
+                                发神经康复疗法就爱看领导JFK垃圾覅六级考了了解对方卡卡了解；来解释大方开朗
                             </a>
                         </div>
                         <div class="left-three-text-below">
@@ -99,10 +98,10 @@
                             </div>
                             <div class="left-three-text-below-two">
                                 <div class="left-three-text-below-two-time">
-                                    发布于 <span th:text="${news.time}">1990-12-06</span>
+                                    发布于 <span>1990-12-06</span>
                                 </div>
                             </div>
-                            <ul class="left-three-text-below-three" class="layui-btn-container">
+                            <ul class="left-three-text-below-three layui-btn-container">
                                 <li>
                                     <button type="button" class="layui-btn"><i class="layui-icon layui-icon-rate"></i></button>
                                 </li>
@@ -115,15 +114,15 @@
                             </ul>
                         </div>
                     </div>
-                    <div th:each="news,newsStat:${newsList}" class="left-three-text">
+                    <div class="left-three-text">
                         <div class="zuo-img">
                             <div class="zuo-img-zhong"><a href="../../WEB-INF/views/article.html" style="height: 100%; width: 100%; display:block"><img class="img-daoxiao" src="../../static/img/1648123602821.jpg"></a></div>
                         </div>
                         <div class="left-three-text-up">
-                            <a class="left-three-text-a" th:text="${news.title}" href="../../WEB-INF/views/article.html">风纪扣撒辣椒粉卡卷</a>
+                            <a class="left-three-text-a" href="../../WEB-INF/views/article.html">风纪扣撒辣椒粉卡卷</a>
                         </div>
                         <div class="left-three-text-centre">
-                            <a class="left-three-text-centre-a" th:text="${news.content}" href="../../WEB-INF/views/article.html">
+                            <a class="left-three-text-centre-a" href="../../WEB-INF/views/article.html">
                             发神经康复疗法就爱看领导JFK垃圾覅六级考了了解对方卡卡了解；来解释大方开朗
                             </a>
                         </div>
@@ -132,10 +131,10 @@
                             </div>
                             <div class="left-three-text-below-two">
                                 <div class="left-three-text-below-two-time">
-                                    发布于 <span th:text="${news.time}">1990-12-06</span>
+                                    发布于 <span>1990-12-06</span>
                                 </div>
                             </div>
-                            <ul class="left-three-text-below-three" class="layui-btn-container">
+                            <ul class="left-three-text-below-three layui-btn-container">
                                 <li>
                                     <button type="button" class="layui-btn"><i class="layui-icon layui-icon-rate"></i></button>
                                 </li>
@@ -156,7 +155,7 @@
                 </div>
                 <div class="first-screen-right">
                     <div class="right-header">
-                        <p class="layui-elem-quote" class="p-zuo">我校新闻</p>
+                        <p class="layui-elem-quote p-zuo">我校新闻</p>
                     </div>
                     <div class="right-file">
                         <a class="right-file-a" href="../../WEB-INF/views/article.html">
@@ -169,15 +168,15 @@
                         </a>
                     </div>
                     <div class="right-header">
-                        <p class="layui-elem-quote" class="p-zuo">免责声明</p>
+                        <p class="layui-elem-quote p-zuo">免责声明</p>
                     </div>
-                    
+
                     <div class="right-file-two">
                         <a class="right-file-a">
                             本站所有资源均来源于网络，仅供学习参考，如有侵权，非常抱歉，请立即联系作者删除
                         </a>
                     </div>
-                    <div class="right-header-" class="layui-btn-container">
+                    <div class="right-header- layui-btn-container">
                         <button id="author" data-method="offset" type="button" class="layui-btn layui-btn-fluid" data-type="auto" >联系作者</button>
                     </div>
                 </div>
@@ -196,9 +195,9 @@
                 <input type="password" name="password" required lay-verify="required" placeholder="确认新密码" autocomplete="off" class="layui-input"><br>
                 <span style="margin-left: 10px;">修改头像: </span><input type="file"><br><br>
                 <div style="margin-left: 10px; width: 100%;">修改手机号: </div><br>
-                
+
                 <label class="layui-form-label"><button type="button" class="layui-btn layui-btn-normal">发送验证码</button></label>
-                
+
                 <input style="width: 200px; margin-top: 10px; " type="text" name="" autocomplete="off" class="layui-input"><br>
                 <input type="text" name="title" required  lay-verify="required" placeholder="请输入新的手机号" autocomplete="off" class="layui-input"><br>
                 <input type="button" style="margin-left: 160px;" class="layui-btn layui-btn-normal" value="提交表单">

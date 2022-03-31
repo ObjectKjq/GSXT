@@ -27,6 +27,8 @@
         <property name="configLocation" value="classpath:SqlMapConfig.xml"/>
         <!--指定数据源-->
         <property name="dataSource" ref="pooledDataSource"/>
+        <!--配置实体类-->
+        <!--<property name="typeAliasesPackage" value="com.gsxt.pojo"/>-->
         <!--指定mybatis中mapper配置文件的位置-->
         <property name="mapperLocations" value="classpath:mapper/*xml"/>
     </bean>

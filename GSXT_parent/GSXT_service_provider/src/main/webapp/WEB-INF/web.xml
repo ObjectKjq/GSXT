@@ -3,33 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-  <!--1.启动spring的容器-->
-  <context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>classpath*:spring*.xml</param-value>
-  </context-param>
-  <!--使用监听器加载我们的spring配置文件，创建spring的ioc容器-->
-  <listener>
-    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-  </listener>
-
-  <!--2.springMVC的前端控制器，拦截所有请求-->
-  <servlet>
-    <servlet-name>dispatcherServlet</servlet-name>
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <!--配置springMVC配置文件的位置和名称-->
-    <init-param>
-      <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:springMVC.xml</param-value>
-    </init-param>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>dispatcherServlet</servlet-name>
-    <!--拦截所有请求-->
-    <url-pattern>/</url-pattern>
-  </servlet-mapping>
-
   <!--3.配置过滤器,指定响应与请求的编码。防止获取请求参数或响应数据时出现乱码现象-->
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>
@@ -55,6 +28,35 @@
     <!--表示给所有请求设置编码-->
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+
+  <!--1.启动spring的容器-->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath*:spring-*.xml</param-value>
+  </context-param>
+  <!--使用监听器加载我们的spring配置文件，创建spring的ioc容器-->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+  <!--2.springMVC的前端控制器，拦截所有请求-->
+  <servlet>
+    <servlet-name>dispatcherServlet</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <!--配置springMVC配置文件的位置和名称-->
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:springMVC.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dispatcherServlet</servlet-name>
+    <!--拦截所有请求-->
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+
 
 <!--  &lt;!&ndash;4.使用rest风格&ndash;&gt;-->
 <!--  &lt;!&ndash;配置HiddenHttpMethodFilter来解析Put，delete请求&ndash;&gt;-->
